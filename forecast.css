@@ -80,11 +80,43 @@ h1 {
     height: 25px;
 }
 
-#dailyweatherresult {
+#dailyweatherresultbox {
     height: 245px;
     width: 265px;
-    background-color: blueviolet;
+    background-color: white;
     position: absolute;
     margin-left: 7px;
     border-radius: 10px;
 }
+
+.sunnyweather {
+    background-image: url(http://media.giphy.com/media/Nzn4mTqGLauBO/giphy.gif);
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-size: 200px;
+    margin-left: 35px;
+    margin-top: 24px;
+}
+
+.rainyweather {
+    background-image: url(http://i.giphy.com/FWtbNFRLJAzbW.gif);
+    height: 245;
+    width: 265;
+    background-size: 333px 243px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.windyweather {
+    background-image: url(http://i.giphy.com/11xQdBeUt8dPA4.gif);
+    height: 245;
+    width: 265;
+    background-size: 333px 243px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+
+/*dont forget stomry weather*/
