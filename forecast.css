@@ -1,5 +1,5 @@
 .display {
-    height: 500px;
+    height: 528px;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -90,33 +90,33 @@ h1 {
 }
 
 .sunnyweather {
-    background-image: url(http://media.giphy.com/media/Nzn4mTqGLauBO/giphy.gif);
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    background-size: 200px;
-    margin-left: 35px;
-    margin-top: 24px;
+    background-image: url(https://i.imgur.com/SYJLhEF.png);
+    overflow: hidden;
+    width: 474px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
 .rainyweather {
-    background-image: url(http://i.giphy.com/FWtbNFRLJAzbW.gif);
-    height: 245;
-    width: 265;
-    background-size: 333px 243px;
+    background-image: url(https://i.imgur.com/CEILIfk.png);
     overflow: hidden;
+    width: 474px;
+    height: 500px;
     border-radius: 10px;
     position: relative;
 }
 
 .windyweather {
-    background-image: url(http://i.giphy.com/11xQdBeUt8dPA4.gif);
-    height: 245;
-    width: 265;
-    background-size: 333px 243px;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    position: relative;
+    background-image: url(http://www.schteingart.com/PalmTreesHawaiiWEB.jpg);
+    height: 500px;
+    width: 474px;
+    background-size: 476px 500px;
+    /* background-repeat: no-repeat; */
+    border-radius: 22px;
+    /* position: relative; */
+    margin-top: -19px;
 }
 
 /*dont forget stomry weather*/
