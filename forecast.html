@@ -10,21 +10,17 @@
 </head>
 <body>
     <div class="display">
-        <div id="forecast">
-            <div class="windyweather">
+            <div id="forecast" class="sunnyweather">
                 <h1>Today's forecast is...</h1>
+                <div id="todaystemp" class="temp">:)</div>
             </div>
-        </div>
     </div>
     <div id="locationinput">
-        <form role="form">
             <div class="form-group">
                 <label class="greentext">Enter your location:</label>
-                <input type="email" class="form-control" id="" placeholder="Enter Zipcode">
-                <button type="submit" class="btn btn-default" id="locationsubmit">Submit</button>
+                <input type="text" class="form-control" id="zipcode" placeholder="Enter zipcode">
+                <button type = "submitZip" class="btn btn-default" id="locationsubmit">Submit</button>
             </div>
-        </form>
-
     </div>
 </body>
 </html>
