@@ -30,6 +30,7 @@ function parseWeather(wuWeather) {
         return "overcastweather";
     } else if (wuWeather === "Clear") {
         return "sunnyweather";
+    }
 }
 
 function updateWeather() {
