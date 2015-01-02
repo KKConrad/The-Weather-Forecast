@@ -4,8 +4,10 @@ jQuery(document).ready(function($) {
         dataType : "jsonp",
         success : function(parsed_json) {
             var location = parsed_json['location']['city'];
-            var temp_f = parsed_json['current_observation']['temp_f'];
+            temp_f = parsed_json['current_observation']['temp_f'];
+            setTemp(temp_f);
             console.log(parsed_json);
+
            /* alert("Current temperature in " + location + " is: " + temp_f);*/
         }
 
@@ -13,15 +15,24 @@ jQuery(document).ready(function($) {
     });
 });
 
-//to-do list:
+var temp_f;
 
 function setWeather(weather) {
-    //be able to set weather classes manually
+    var weatherSelector = "#forecast";
+    var weatherScreen = $(weatherSelector);
+    weatherScreen.removeClass();
+    var weatherClass = (weather);
+    weatherScreen.addClass(weatherClass);
+    //when typing weather, it must be a string;
 }
 
 function setTemp(temperature) {
-    //also be able to set the temperature.
+    var tempSelector = "#todaystemp";
+    var tempset = $(tempSelector);
+    tempset.html(temperature)
 }
 
-//get userWeather when they enter in a location using zipcode, or city & state,
+
+
+//get userWeather whe4n they enter in a location using zipcode, or city & state,
 //and then be able to have the API read the string and return information
