@@ -26,10 +26,20 @@ function setTemp(temperature) {
 }
 
 function parseWeather(wuWeather) {
-    if (wuWeather === "Overcast" || wuWeather === "Mostly Cloudy" || wuWeather === "Heavy Fog") {
+    if (wuWeather === "Overcast") {
         return "overcastweather";
     } else if (wuWeather === "Clear") {
         return "sunnyweather";
+    } else if (wuWeather.indexOf("Rain") >= 0) {
+        return "rainyweather";
+    } else if(wuWeather.indexOf("Thunderstorms") >= 0) {
+        return "thunderweather";
+    } else if (wuWeather.indexOf("Snow") >= 0) {
+        return "snowyweather";
+    } else if (wuWeather.indexOf("Cloudy") >= 0) {
+        return "cloudyweather";
+    } else if (wuWeather.indexOf("Fog") >= 0) {
+        return "foggyweather";
     }
 }
 
@@ -39,9 +49,9 @@ function updateWeather() {
         dataType : "jsonp",
         success : function(parsed_json) {
             var location = parsed_json['location']['city'];
-            var temp_f = parsed_json['current_observation']['temp_f'];
+            var temperature_string = parsed_json['current_observation']['temperature_string'];
             var weather = parsed_json['current_observation']['weather'];
-            setTemp(temp_f);
+            setTemp(temperature_string);
             setWeather(parseWeather(weather));
             console.log(parsed_json);
 
