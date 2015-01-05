@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
     $("#locationsubmit").click(function() {
         console.log('clicked');
         updateWeather();
+        $(".enterbelow").hide();
         return false;
     });
 });

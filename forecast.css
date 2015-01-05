@@ -7,6 +7,10 @@
     border-radius: 5px;
 }
 
+body {
+    background-color: paleturquoise;
+}
+
 #weatherinfobox {
     height: 70px;
     width: 414px;
@@ -95,6 +99,15 @@ h1 {
     height: 25px;
 }
 
+.enterbelow {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+
 #dailyweatherresultbox {
     height: 245px;
     width: 265px;
@@ -105,7 +118,7 @@ h1 {
 }
 
 .defaultweather {
-    background-image: url(https://i.imgur.com/upE7Ieo.png);
+    background-image: url(https://i.imgur.com/0fKvhQG.png);
     width: 474px;
     height: 500px;
     border-radius: 10px;
