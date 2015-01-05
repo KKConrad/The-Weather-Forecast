@@ -30,7 +30,7 @@
 }
 
 #todaystemp {
-    width: 50px;
+    width: 200px;
     height: 50px;
 }
 
@@ -47,6 +47,7 @@ h1 {
     position: absolute;
     width: 56px;
     height: 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #dailyweather {
     height: 330px;
@@ -103,6 +104,14 @@ h1 {
     border-radius: 10px;
 }
 
+.defaultweather {
+    background-image: url(https://i.imgur.com/upE7Ieo.png);
+    width: 474px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
 .sunnyweather {
     background-image: url(https://i.imgur.com/SYJLhEF.png);
     overflow: hidden;
@@ -139,4 +148,31 @@ h1 {
     border-radius: 22px;
     margin-top: -19px;
 }
-/*don't forget stormy weather*/
+
+.thunderweather {
+    background-image: url(https://i.imgur.com/GNJ2xXy.png);
+    height: 500px;
+    width: 474px;
+    border-radius: 5px;
+}
+
+.snowyweather {
+    background-image: url(https://i.imgur.com/4Tmt30b.png);
+    height: 500px;
+    width: 474px;
+    border-radius: 10px;
+}
+
+.cloudyweather {
+    background-image: url(https://i.imgur.com/JyDBWzR.png);
+    height: 500px;
+    width: 474px;
+    border-radius: 10px;
+}
+
+.foggyweather {
+    background-image: url(https://i.imgur.com/wN8UPx5.png);
+    height: 500px;
+    width: 474px;
+    border-radius: 10px;
+}
